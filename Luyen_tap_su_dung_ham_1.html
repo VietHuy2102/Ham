@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Bài 1: Tạo hàm alertMessage() hiển thị hộp thoại chứa chuỗi "Xin chao". Gọi hàm từ trong phần body của trang
+    web.</h3>
+<button onclick="alertMessage()"> Hoàn thành bài 1</button>
+<script>
+    function alertMessage() {
+        alert("xinchao");
+    }
+</script>
+<h3>Bài 2: Tạo hàm nhận vào một đối số dạng số, tăng giá trị đối số đó lên 1 và trả lại giá trị cho lời gọi hàm. Gọi hàm
+    từ trong phần body của trang web và hiển thị kết quả lên màn hình.</h3>
+<button onclick="lesson2()">Hoàn thành bài 2</button>
+<script>
+    function lesson2() {
+        let a = +prompt("nhập đối số a")
+        let b = +prompt("nhập đối số b")
+
+        nhapdoisaoab(a, b)
+
+        function nhapdoisaoab(a, b) {
+            alert(`Đối số a + 1 là ${a + 1} và đối số b+1 là ${b + 1}`)
+        }
+    }
+
+
+</script>
+<h3>Bài 3: Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại
+    thông báo cho người dùng. Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai
+    tham số.</h3>
+<button onclick="lesson3()">Hoàn thành bài 3</button>
+<script>
+    function lesson3() {
+    let a = +prompt("Nhập giá trị a là : ")
+    let b = +prompt("Nhập giá trị b là : ")
+        if (a > b) {
+            alert("Số a lớn hơn số b đấy các bạn ạ")
+        } else {
+            alert(`số a nhỏ hơn b và tổng của  2 số là ${sum=a+b}`)
+        }
+    }
+</script>
+
+</script>
+</body>
+</html>

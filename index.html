@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Js.css">
+    <script src="ProductManager.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="add-product">
+        <table class="table-add-product">
+
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td><input type="text" id="price"></td>
+            </tr>
+            <tr>
+                <td>Author</td>
+                <td><input type="text" id="author"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="save()" >Save</button>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="list-product">
+        <table class="table-list-product">
+            <thead>
+            <tr>
+                <th>STT</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Author</th>
+            </tr>
+            </thead>
+            <tbody id="list-product">
+            <tr>
+                <td>1</td>
+                <td>Samsung Note 20</td>
+                <td>40000</td>
+                <td>Samsung</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="Product.js"></script>
+<script src="ProductManager.js"></script>
+<script src="Main.js"></script>
+</body>
+</html>
